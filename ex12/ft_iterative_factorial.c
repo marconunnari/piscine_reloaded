@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mnunnari <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/04/12 21:24:46 by mnunnari          #+#    #+#             */
-/*   Updated: 2017/04/12 21:24:47 by mnunnari         ###   ########.fr       */
+/*   Created: 2017/04/12 22:10:28 by mnunnari          #+#    #+#             */
+/*   Updated: 2017/04/12 22:10:36 by mnunnari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@ int		ft_iterative_factorial(int nb)
 {
 	int		res;
 
-	if (nb < 0)
+	if (nb < 0 || nb > 31)
 		return (0);
 	res = 1;
 	while (nb > 1)

@@ -8,9 +8,12 @@ SRCS = ft_putchar.c \
 
 OBJS = $(SRCS:%.c=objs/%.o)
 
+.PHONY: all clean fclean re
+
 all: $(NAME)
 
 objs/%.o: srcs/%.c
+	mkdir objs
 	gcc -Wall -Wextra -Werror -Iincludes -c $< -o $@
 
 $(NAME): $(OBJS)
