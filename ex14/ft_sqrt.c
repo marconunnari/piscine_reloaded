@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mnunnari <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/04/12 21:26:28 by mnunnari          #+#    #+#             */
-/*   Updated: 2017/04/12 21:26:30 by mnunnari         ###   ########.fr       */
+/*   Created: 2017/04/12 22:52:10 by mnunnari          #+#    #+#             */
+/*   Updated: 2017/04/12 22:52:13 by mnunnari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,8 @@ int		ft_sqrt(int nb)
 	while (i <= nb / 2)
 	{
 		if (i * i == nb)
-			return (i);
+			if (nb / i == i)
+				return (i);
 		i++;
 	}
 	return (0);

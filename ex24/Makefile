@@ -13,7 +13,7 @@ OBJS = $(SRCS:%.c=objs/%.o)
 all: $(NAME)
 
 objs/%.o: srcs/%.c
-	mkdir objs
+	mkdir -f objs
 	gcc -Wall -Wextra -Werror -Iincludes -c $< -o $@
 
 $(NAME): $(OBJS)
