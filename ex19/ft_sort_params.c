@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_sort_params.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mnunnari <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/04/12 21:37:51 by mnunnari          #+#    #+#             */
+/*   Updated: 2017/04/12 21:38:29 by mnunnari         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 void	ft_putchar(char c);
 
 void	ft_putstr(char *str)
 {
-	while(*str)
+	while (*str)
 	{
 		ft_putchar(*str);
 		str++;
@@ -47,7 +59,7 @@ int		main(int argc, char **argv)
 		j = i + 1;
 		while (j < argc)
 		{
-			if (ft_strcmp(argv[i],argv[j]) > 0)
+			if (ft_strcmp(argv[i], argv[j]) > 0)
 			{
 				temp = argv[i];
 				argv[i] = argv[j];

@@ -11,7 +11,7 @@ OBJS = $(SRCS:%.c=objs/%.o)
 all: $(NAME)
 
 objs/%.o: srcs/%.c
-	gcc -Wall -Wextra -Werror -c $< -o $@
+	gcc -Wall -Wextra -Werror -Iincludes -c $< -o $@
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
